@@ -1,168 +1,111 @@
-.border_color {
-    border-bottom: 2px solid #17594a !important;
-    color: #17594a !important;
-}
-
-#login #login-tab,
-#login #register-tab {
-    display: inline-block;
-}
-
-#login .card {
-    border: none;
-}
-
-#login .card-body {
+.Cong_content {
+    background-color: #f2f2f2;
     width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
 }
-
-#login {
-    border-radius: 5px;
-    padding: 10px 20px;
+.Cong_searchbox {
+    max-width: 900px;
+    margin: auto;
+    
 }
-
-#login ul {
-    padding-top: 15px;
-    border-bottom: 1px solid #ada1a1;
-}
-
-#login label {
-    font-size: 13px;
-}
-
-#login input {
-    margin: 15px 0px;
-    width: 100%;
-    padding: 10px 0px 0px 0px;
-    font-size: 13px;
+input {
     border: none;
-    border-bottom: 1px solid #333;
+    border-radius: 4pt 0 0 4pt;
+    height: 24pt;
+    padding: 0pt 8pt;
+    font-size: 14px;
+    width: 100%;
+}
+input[type=text]:focus {
     outline: none;
 }
-
-#login button {
-    margin-top: 15px;
-}
-
-.hidden {
-    display: none;
-}
-
-.d-block {
-    display: block;
-}
-
-body {
-    position: relative;
-}
-
-.mainMenu__childItem {
-    display: none;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.wp {
-    max-height: 56px;
-    background-color: rgb(0, 0, 0, 0.1);
-}
-
-.wp:hover {
-    background-color: rgb(0, 0, 0, 0.3);
-}
-
-ul .mainMenu__columns.activee ul {
-    display: block;
-}
-
-.mainMenu__childItem {
-    padding: 15px;
-    color: #333;
-    width: 200px;
-    border-right: 1px solid #d6c0c0;
-}
-
-ul .mainMenu__columns {
-    padding: 15px 15px;
-    position: relative;
-    color: #fff;
-}
-
-ul .mainMenu__columns ul li a {
-    color: #333;
-}
-
-ul .mainMenu__columns ul li {
-    padding: 5px 0px;
-}
-
-nav.childnav {
+.Cong_seach {
     display: flex;
-    position: absolute;
-    background-color: rgb(246, 249, 251);
-    top: 56px;
-    left: 0px;
+    margin-left: 30%;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15px; 
+    
 }
-
-#header {
-    background-image: url('https://d1hjkbq40fs2x4.cloudfront.net/2017-08-21/files/landscape-photography_1645.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#login {
-    background-color: #fff;
-}
-
-.menu_title {
-    font-size: 13px;
-    color: rgb(0, 0, 0, 0.4);
-    margin-bottom: 20px;
-}
-
-.color_orage {
-    background-color: #213363;
-}
-
-nav.wp {
+.Cong_seach .Cong_seach_container {
     position: relative;
-    width: 100%;
-    top: 0;
-    position: fixed;
 }
 
-#form_langue {
-    position: absolute;
-    right: 15px;
-    width: 300px;
-    background-color: #fff;
-    top: 56px;
-}
 
-label a {
-    display: inline-block;
-    padding: 10px 15px;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+.button_search {
+    background-color: #48484a;
+    border-color: #48484a;
+    color: #f2f2f2;
+    border-style: none;
+    border-radius: 0 4pt 4pt 0;
+    padding: 0 8pt;
+    height: 24pt;
+    width: 90px;
+    cursor: pointer;
 }
-
-.text-red {
-    font-size: 14px;
-    font-style: italic;
-    color: red;
+.button_search:hover {
+    opacity: 0.8;
 }
-
-#input {
-    padding: 15px;
+.Cong_current {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 8pt;
+    max-width: 900px;
+    margin: auto;
+}
+.Cong_orange-text {
+    color: #eb6e4b;
+}
+.Cong_province h2 {
+    font-weight: 700;
+    font-size: 25px;
+}
+.Cong_current_temp {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+.Cong_current_temp svg {
+    margin-left: -5px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.temp_heading {
+    font-size: 36px;
+    font-weight: 100;
+    margin-right: 8pt;
+}
+.Cong_feels {
+    font-weight:700;
+}
+.Cong_weather_items {
+    margin-top: 4pt;
+    margin-bottom: 0;
+    padding-left: 16pt;
+    padding-right: 16pt;
+    max-width: 280px;
+    border-left: 1px solid #eb6e4b;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 20px;
+    
+}
+.Cong_weather_items li {
+    margin-right: 16pt;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.Cong_weather_items li svg {
+    margin-right: 2pt;
+}
+.icon-pressure {
+    height: 12pt;
+    width: auto;
+}
+.symbol {
+    margin-right: 4pt;
 }
